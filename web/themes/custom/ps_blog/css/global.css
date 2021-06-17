@@ -1,0 +1,21 @@
+.page {
+  font: 18px/1.4 "Roboto", sans-serif;
+  color: #373737;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.page-title {
+  text-align: center;
+}
+
+.main-content {
+  border-top: 3px solid #828282;
+  padding-top: 30px !important;
+}
+
+/*# sourceMappingURL=global.css.map */

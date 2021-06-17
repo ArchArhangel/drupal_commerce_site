@@ -1,0 +1,55 @@
+form .form-item, form .form-actions {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+form select {
+  height: 40px;
+  border: 1px solid #4c84be;
+  background-color: #ffffff;
+  padding: 0 20px;
+}
+form input {
+  height: 40px;
+}
+form input[type=submit] {
+  border: 1px solid #4c84be;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 0 10px;
+}
+form label {
+  color: #4c84be;
+  font-size: 14px;
+}
+form .form-type-select label {
+  display: block;
+}
+form .form-item input {
+  border: 1px solid #828282;
+  padding: 0 10px;
+}
+form .form-actions input {
+  border: 1px solid #4c84be;
+  background-color: #ffffff;
+  text-align: center;
+  min-width: 100px;
+  padding: 0 30px;
+}
+form .form-type-radio label, form .form-type-checkbox label {
+  color: #373737;
+}
+form .form-type-radio input, form .form-type-checkbox input {
+  height: inherit;
+}
+form fieldset {
+  border-color: #4c84be;
+}
+form fieldset legend {
+  color: #4c84be;
+}
+form fieldset legend a {
+  color: #828282;
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=form.css.map */

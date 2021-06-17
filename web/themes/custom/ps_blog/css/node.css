@@ -1,0 +1,63 @@
+.node .field--name-body {
+  margin-bottom: 20px;
+}
+.node .field--name-field-images {
+  display: grid;
+  grid-gap: 20px;
+  margin-bottom: 20px;
+}
+.node .field--name-field-images img {
+  display: block;
+  margin: 0 auto;
+}
+.node .field--name-field-category-recipe, .node .field--name-field-tags {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+.node .field--name-field-category-recipe a, .node .field--name-field-tags a {
+  margin: 0 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #828282;
+}
+.node .field--name-field-category-recipe a:hover, .node .field--name-field-tags a:hover {
+  color: #4c84be;
+}
+.node .field--name-title {
+  display: block;
+  margin-bottom: 10px;
+}
+.node .field--name-title a {
+  text-decoration: none;
+  color: #828282;
+}
+.node--view-mode-short .layout__region--content {
+  display: flex;
+  align-items: center;
+}
+.node--view-mode-short .layout__region--content > div:first-child {
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+.node--view-mode-short .field--name-field-images img {
+  border-radius: 10px;
+}
+.node--view-mode-short .field--name-title {
+  margin-bottom: 20px;
+}
+.node--view-mode-teaser {
+  max-width: 320px;
+  margin: 0 auto;
+}
+.node--view-mode-teaser img {
+  border-radius: 10px;
+}
+
+.view-recipe-term .view-content {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/*# sourceMappingURL=node.css.map */

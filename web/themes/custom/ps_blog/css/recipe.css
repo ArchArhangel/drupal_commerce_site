@@ -1,0 +1,90 @@
+.node--recipe .field__label {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.node--recipe-full .node__content {
+  display: flex;
+  flex-flow: row wrap;
+}
+.node--recipe-full .node__content > * {
+  width: 100%;
+}
+.node--recipe-full .node__content .field--name-field-time-for-preparing, .node--recipe-full .node__content .field--name-field-difficulty {
+  width: 50%;
+  margin-bottom: 20px;
+}
+.node--recipe-full .node__content .field--name-field-ingredients {
+  margin-bottom: 20px;
+}
+.node--recipe-full .node__content .field--name-field-ingredients .field__items .field__item {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 30px;
+}
+.node--recipe-full .node__content .field--name-field-ingredients .field__items .field__item:last-child {
+  margin-bottom: 0;
+}
+.node--recipe-full .node__content .field--name-field-ingredients .field__items .field__item:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 4px;
+  border: 2px solid #828282;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.node--recipe-full .node__content .field--name-field-ingredients .field__items .field__item:hover:before {
+  border-color: #4c84be;
+}
+.node--recipe-teaser {
+  max-width: 320px;
+  margin: 0 auto;
+}
+.node--recipe-teaser img {
+  border-radius: 10px;
+}
+.node--recipe-teaser .layout__region--content {
+  display: flex;
+  flex-flow: row wrap;
+}
+.node--recipe-teaser .layout__region--content > * {
+  width: 100%;
+}
+.node--recipe-teaser .layout__region--content > *:nth-child(2), .node--recipe-teaser .layout__region--content > *:nth-child(3) {
+  width: 50%;
+  margin-bottom: 10px;
+}
+.node--recipe-teaser .layout__region--content > *:nth-child(3) {
+  text-align: right;
+}
+.node--recipe-short .layout__region--content {
+  display: flex;
+  align-items: center;
+}
+.node--recipe-short .layout__region--content > div:first-child {
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+.node--recipe-short .field--name-field-images img {
+  border-radius: 10px;
+}
+.node--recipe-block .layout__region--content {
+  position: relative;
+}
+.node--recipe-block .layout__region--content img {
+  border-radius: 10px;
+}
+.node--recipe-block .layout__region--content > div:last-child {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+.node--recipe-block .layout__region--content > div:last-child a {
+  font-size: 27px;
+  color: #ffffff;
+  text-shadow: 0px 3px 2px #969696;
+}
+
+/*# sourceMappingURL=recipe.css.map */

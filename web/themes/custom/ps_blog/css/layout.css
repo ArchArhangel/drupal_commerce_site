@@ -1,0 +1,35 @@
+.main-content {
+  display: flex;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.layout-one-sidebar .main-content > main {
+  width: calc(100% - (30px + 350px));
+  flex: 1;
+}
+.layout-one-sidebar .main-content > aside {
+  max-width: 350px;
+  margin-left: 30px;
+}
+
+.grid-view-2-col .view-content {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-view-3-col .view-content {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-view-4-col .view-content {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/*# sourceMappingURL=layout.css.map */

@@ -1,0 +1,25 @@
+@import "mixins";
+@import "variables";
+.pager {
+  padding-bottom: $gutter;
+  &__items {
+    display: flex;
+    justify-content: center;
+    @include lireset;
+  }
+  &__item {
+    margin: 0 5px;
+    a {
+      color: $gray;
+      text-decoration: none;
+      padding: 3px 10px;
+      border: 1px solid $white;
+    }
+    &.is-active, &:hover {
+      a {
+        color: $blue;
+        border: 1px solid $blue;
+      }
+    }
+  }
+}

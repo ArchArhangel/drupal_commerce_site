@@ -1,0 +1,42 @@
+.node--article .field--name-field-text {
+  margin-bottom: 20px;
+}
+.node--article .field--name-field-images {
+  display: grid;
+  grid-gap: 20px;
+  margin-bottom: 20px;
+}
+.node--article .field--name-field-images img {
+  display: block;
+  margin: 0 auto;
+}
+.node--article .field--name-field-categories, .node--article .field--name-field-tags {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+.node--article .field--name-field-categories a, .node--article .field--name-field-tags a {
+  margin: 0 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #828282;
+}
+.node--article .field--name-field-categories a:hover, .node--article .field--name-field-tags a:hover {
+  color: #4c84be;
+}
+.node--article .field--name-body {
+  margin-bottom: 20px;
+}
+.node--article-teaser {
+  margin-bottom: 20px;
+}
+.node--article-teaser .field--name-title {
+  display: block;
+  margin-bottom: 10px;
+}
+.node--article-teaser .field--name-title a {
+  text-decoration: none;
+  color: #828282;
+}
+
+/*# sourceMappingURL=ps-portal.css.map */

@@ -1,0 +1,17 @@
+@import "variables";
+.region {
+  & > .block {
+    margin-bottom: $gutter;
+  }
+}
+.region-header {
+  max-width: $desktop;
+  padding: $gutter 10px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & > nav.navigation {
+    margin: 0 0 $gutter;
+  }
+}

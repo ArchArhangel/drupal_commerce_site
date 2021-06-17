@@ -1,0 +1,14 @@
+@mixin clearfix {
+  &:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+}
+@mixin lireset {
+  padding: 0;
+  margin: 0;
+  li {
+    list-style: none;
+  }
+}

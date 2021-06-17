@@ -1,0 +1,17 @@
+.region > .block {
+  margin-bottom: 30px;
+}
+
+.region-header {
+  max-width: 960px;
+  padding: 30px 10px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.region-header > nav.navigation {
+  margin: 0 0 30px;
+}
+
+/*# sourceMappingURL=region.css.map */

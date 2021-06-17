@@ -1,0 +1,63 @@
+@import "mixins";
+@import "variables";
+.block-facets-summary {
+  & > ul {
+    @include lireset;
+    a {
+      color: $black;
+      &:hover {
+        color: $blue;
+      }
+    }
+    .facet-summary-item--clear {
+      a {
+        border: 1px solid $blue;
+        text-align: center;
+        width: 100%;
+        color: $blue;
+        display: block;
+        padding: 2px $gutterS;
+        text-decoration: none;
+      }
+    }
+  }
+}
+#views-exposed-form-index-products-page-1 {
+  .form--inline {
+    display: flex;
+    align-items: flex-end;
+  }
+  margin-bottom: $gutter;
+}
+.block-facets {
+  .facets-widget-range_slider {
+    ul {
+      @include lireset;
+    }
+  }
+  .facets-widget-checkbox {
+    ul {
+      @include lireset;
+      li {
+        margin-bottom: $gutterS /2;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      input {
+        height: 15px;
+        width: 15px;
+        margin-right: $gutterS /2;
+      }
+      label {
+        cursor: pointer;
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
+  }
+}
+.block-facet--range-slider {
+  margin-bottom: $gutter * 2 !important;
+}

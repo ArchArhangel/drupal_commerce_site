@@ -1,0 +1,372 @@
+@import "mixins";
+@import "variables";
+.commerce--recipe-teaser {
+  position: relative;
+  .field--name-variations {
+    position: absolute;
+    right: 0;
+    padding: 5px 15px;
+    background-color: $white;
+    color: $blue;
+    border: 1px solid $gray;
+    font-size: 20px;
+  }
+  margin-bottom: $gutter;
+  .field--name-title {
+    margin-top: $gutterS;
+  }
+}
+
+.commerce--recipe-full {
+  & > .layout {
+    margin-bottom: $gutterM;
+  }
+  .layout--twocol-section--50-50 {
+    .layout__region {
+      &--first {
+        padding-right: 15px;
+      }
+      &--second {
+        padding-left: 15px;
+      }
+    }
+  }
+  .field--name-price {
+    margin-top: $gutterM;
+    .field__label {
+      color: $blue;
+      padding-top: 3px;
+    }
+    .field__item {
+      font-size: 20px;
+    }
+  }
+}
+
+.view-recipes {
+  .view-content {
+    .views-row {
+      border-bottom: 1px solid $blue;
+      margin-bottom: $gutter;
+      &:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.view-commerce-cart-form {
+  form {
+    .form-type-number {
+      input {
+        text-align: center;
+        padding-right: 0;
+      }
+    }
+    .form-actions {
+      text-align: center;
+    }
+  }
+  .views-field-purchased-entity {
+    padding-right: $gutterS;
+  }
+  .views-field-total-price__number, .views-field-unit-price__number {
+    text-align: center;
+  }
+  table {
+    border-bottom: 2px solid $blue;
+    margin-top: $gutterS;
+    margin-bottom: $gutterM;
+  }
+}
+.order-total-line {
+  &-label {
+    color: $blue;
+  }
+}
+.views-view-table {
+  thead {
+    border-bottom: 2px solid $blue;
+    th {
+      color: $blue;
+      padding: 10px 20px;
+    }
+  }
+  tbody {
+    td {
+      //padding: 0 10px;
+    }
+  }
+}
+.layout-checkout-form {
+  display: flex;
+  flex-flow: row wrap;
+  .layout-region {
+    &-checkout-main {
+      width: calc(100% - 330px);
+    }
+    &-checkout-secondary {
+      width: 300px;
+      margin-left: $gutter;
+    }
+    &-checkout-footer {
+      width: 100%;
+    }
+  }
+  .layout-region-checkout-secondary {
+    margin-left: $gutter;
+    h3 {
+      margin-top: 15px;
+      color: $blue;
+    }
+  }
+  .address-line1 {
+    width: 100%;
+  }
+}
+.commerce-checkout-flow {
+  .form-type-radio {
+    label {
+      text-transform: uppercase;
+      font-size: 15px;
+    }
+  }
+  .field--type-address {
+    .form-type-textfield {
+      input {
+        width: 100%;
+      }
+    }
+  }
+  .address-container-inline {
+    display: flex;
+    justify-content: space-between;
+    & > div {
+      width: calc(50% - 15px);
+      margin-right: 0;
+      input {
+        width: 100%;
+      }
+    }
+  }
+  .form-actions {
+    a {
+      margin-left: $gutter;
+      color: $gray;
+      text-decoration: none;
+    }
+  }
+  .form-type-email {
+    input {
+      width: 100%;
+    }
+  }
+}
+.view-commerce-checkout-order-summary {
+  .views-row {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .views-field-total-price__number {
+    width: 100px;
+    margin-left: 10px;
+  }
+}
+.commerce--season-ticket-full {
+  &:before {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .field--name-field-image {
+    float: left;
+    width: calc(50% - 15px);
+    margin-bottom: $gutter;
+  }
+  .field--name-variations {
+    float: right;
+    width: calc(50% - 15px);
+    margin-bottom: $gutter;
+  }
+  .field--type-commerce-price {
+    float: right;
+    width: calc(50% - 15px);
+    margin-bottom: $gutter;
+    display: flex;
+    align-items: center;
+    .field__label {
+      color: $blue;
+      margin-right: $gutterM;
+    }
+    .field__item {
+      font-size: 20px;
+    }
+  }
+  .field--name-body {
+    clear: both;
+  }
+  form {
+    select {
+      width: 100%;
+    }
+    .form-actions {
+      text-align: center;
+    }
+  }
+}
+.commerce--season-ticket-teaser {
+  .field--name-price {
+    display: none;
+  }
+}
+.commerce--view-mode-teaser {
+  .field--name-title {
+    text-align: center;
+    a {
+      font-size: 20px;
+      color: $blue;
+      text-decoration: none;
+    }
+  }
+}
+.commerce--clothes-full {
+  .layout--twocol-section--67-33 {
+    .layout__region {
+      &--first {
+        padding-right: $gutter /2;
+      }
+      &--second {
+        padding-left: $gutter /2;
+      }
+    }
+  }
+  .field--name-field-images {
+    margin-bottom: $gutter;
+    display: grid;
+    grid-gap: $gutterM;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .field--name-title {
+    color: $blue;
+    font-size: 24px;
+    margin-bottom: $gutterS;
+  }
+  .field--name-sku {
+    margin-bottom: $gutterS;
+  }
+  .field--name-purchased-entity {
+    label {
+      margin-bottom: $gutterS /2;
+    }
+    select {
+      width: 100%;
+    }
+    .field--name-field-color {
+      //font-size: 0;
+      line-height: 0;
+    }
+  }
+  .field--name-quantity {
+    label {
+      display: block;
+      margin-bottom: $gutterS /2;
+    }
+    input {
+      width: 100%;
+      border: 1px solid $blue;
+    }
+  }
+  .field--name-price {
+    display: flex;
+    align-items: center;
+    margin-bottom: $gutterM;
+    .field__label {
+      color: $blue;
+      margin-right: $gutterM;
+    }
+    .field__item {
+      font-size: 20px;
+    }
+  }
+  .field--name-field-commerce-collection,
+  .field--name-field-commerce-for-who,
+  .field--name-field-commerce-clothes,
+  .field--name-field-commerce-discount,
+  .field--name-field-commerce-cover {
+    display: flex;
+    align-items: center;
+    margin-bottom: $gutterS;
+    .field__label {
+      color: $blue;
+      font-weight: normal;
+      margin-right: $gutterS;
+      position: relative;
+      &:before {
+        position: absolute;
+        content: ":";
+        right: -6px;
+        top: calc(50% - 12px);
+      }
+    }
+    .field__item {
+      font-size: 14px;
+      a {
+        color: $black;
+        text-decoration: none;
+      }
+    }
+  }
+  .product--rendered-attribute__selected ~ label.option {
+    border-color: $blue;
+  }
+}
+.commerce--view-mode-short {
+  @include clearfix;
+  margin-bottom: $gutterM;
+  & > * {
+    &:not(.field--name-field-image) {
+      float: right;
+      width: calc(100% - (100px + #{$gutterM}));
+    }
+  }
+  .field--name-field-image {
+    float: left;
+    font-size: 0;
+    margin-right: $gutterM;
+    width: 100px;
+    img {
+      border-radius: $gutterS;
+    }
+  }
+  .field--name-title {
+    a {
+      color: $black;
+      text-decoration: none;
+      margin-bottom: $gutterS;
+      font-size: 16px;
+    }
+  }
+  .field--name-variations {
+    text-align: right;
+    color: $blue;
+    margin-top: $gutterS;
+    & > * {
+      &:not(:first-child) {
+        display: none;
+      }
+    }
+  }
+}
+.cart-block {
+  &--link__expand {
+    display: block;
+    background-color: $blue;
+    color: $white;
+    line-height: 1.6;
+    padding: 0 20px;
+    text-decoration: none;
+  }
+  &--summary__icon {
+    margin-right: $gutterS;
+  }
+}
